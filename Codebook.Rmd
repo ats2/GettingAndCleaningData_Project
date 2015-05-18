@@ -20,8 +20,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ####Excerpts from the data source features_info.txt file:
 
-Feature Selection 
-=================
+###Feature Selection 
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -50,64 +49,64 @@ fBodyAccJerkMag
 fBodyGyroMag
 fBodyGyroJerkMag
 
-#### Variables in tidydataset.txt:
+#### Variables in tidydata.txt:
 
-The summarized dataset tidydata.txt begins with the following variables:
-activity class: activity code (1-6)
-activity: activity description 
-subject: subject (participant) number
+The summarized dataset tidydata.txt begins with the following variables:  
+activity class: activity (1-6)  
+activity: activity description   
+subject: subject (participant) number  
 
-The full source dataset includes many more variables than were used for this project (full set listed far below).  However, step 2 of the project instructions indicates that the successful R script:
+The full source dataset includes many more variables than were used for this project (full set listed down below).  However, step 2 of the project instructions indicates that the successful R script:   
 2.Extracts only the measurements on the mean and standard deviation for each measurement.
 
 The interpretation here was to include the subset of variables whose names contain the terms 'mean' or 'std': 
 
-mean(): Mean value
-std(): Standard deviation
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-angle(): Angle between to vectors.
+mean(): Mean value   
+std(): Standard deviation   
+meanFreq(): Weighted average of the frequency components to obtain a mean frequency   
+angle(): Angle between to vectors.   
 
-Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:   
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+gravityMean   
+tBodyAccMean   
+tBodyAccJerkMean   
+tBodyGyroMean   
+tBodyGyroJerkMean   
 
 The final project instructions were to create (from the observation-level mean/std file) a summarized tidy
 data set with the average of each variable for each activity and 
-each subject.
+each subject.   
 
-####Per data source - variables in the full source dataset:
+####Per the data source - the variables in the full source dataset include:   
 
-The set of variables that were estimated from these signals are: 
+The set of variables that were estimated from these signals are:    
 
-mean(): Mean value
-std(): Standard deviation
-mad(): Median absolute deviation 
-max(): Largest value in array
-min(): Smallest value in array
-sma(): Signal magnitude area
-energy(): Energy measure. Sum of the squares divided by the number of values. 
-iqr(): Interquartile range 
-entropy(): Signal entropy
-arCoeff(): Autorregresion coefficients with Burg order equal to 4
-correlation(): correlation coefficient between two signals
-maxInds(): index of the frequency component with largest magnitude
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-skewness(): skewness of the frequency domain signal 
-kurtosis(): kurtosis of the frequency domain signal 
-bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
-angle(): Angle between to vectors.
+mean(): Mean value   
+std(): Standard deviation   
+mad(): Median absolute deviation    
+max(): Largest value in array   
+min(): Smallest value in array   
+sma(): Signal magnitude area   
+energy(): Energy measure. Sum of the squares divided by the number of values.    
+iqr(): Interquartile range    
+entropy(): Signal entropy   
+arCoeff(): Autorregresion coefficients with Burg order equal to 4   
+correlation(): correlation coefficient between two signals   
+maxInds(): index of the frequency component with largest magnitude   
+meanFreq(): Weighted average of the frequency components to obtain a mean frequency   
+skewness(): skewness of the frequency domain signal    
+kurtosis(): kurtosis of the frequency domain signal    
+bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.   
+angle(): Angle between to vectors.   
 
-Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:   
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+gravityMean   
+tBodyAccMean   
+tBodyAccJerkMean   
+tBodyGyroMean   
+tBodyGyroJerkMean   
 
 The complete list of variables of each feature vector is available in 'features.txt'
 
