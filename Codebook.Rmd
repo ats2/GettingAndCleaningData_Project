@@ -20,7 +20,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ####Excerpts from the data source features_info.txt file:
 
-###Feature Selection 
+####Feature Selection 
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -56,10 +56,8 @@ activity class: activity (1-6)
 activity: activity description   
 subject: subject (participant) number  
 
-The full source dataset includes many more variables than were used for this project (full set listed down below).  However, step 2 of the project instructions indicates that the successful R script:   
-2.Extracts only the measurements on the mean and standard deviation for each measurement.
-
-The interpretation here was to include the subset of variables whose names contain the terms 'mean' or 'std': 
+The full source dataset includes many more variables than were used for this project (full set listed down below).  Step 2 of the project instructions indicates that the successful R script:   
+2.Extracts only the measurements on the mean and standard deviation for each measurement.  The interpretation here was to include the subset of variables whose names contain the terms 'mean' or 'std': 
 
 mean(): Mean value   
 std(): Standard deviation   
@@ -76,7 +74,7 @@ tBodyGyroJerkMean
 
 The final project instructions were to create (from the observation-level mean/std file) a summarized tidy
 data set with the average of each variable for each activity and 
-each subject.   
+each subject.  THus the tidydata.txt file has one record per subject an dactivity with means of the mean/std deviation variables.   
 
 ####Per the data source - the variables in the full source dataset include:   
 
