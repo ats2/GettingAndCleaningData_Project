@@ -73,7 +73,7 @@ tBodyGyroJerkMean
 
 The final project instructions were to create (from the observation-level mean/std file) a summarized tidy
 data set with the average of each variable for each activity and 
-each subject.  THus the tidydata.txt file has one record per subject an dactivity with means of the mean/std deviation variables.   
+each subject.  Thus the tidydata.txt file has one record per subject and activity with means of the mean and standard deviation variables.   
 
 ####Per the data source - the variables in the full source dataset include:   
 
