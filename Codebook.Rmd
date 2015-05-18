@@ -50,7 +50,14 @@ fBodyAccJerkMag
 fBodyGyroMag
 fBodyGyroJerkMag
 
-The full source dataset includes many more variables than were used for this project (full set listed below).  However, step 2 of the project instructions indicates that the successful R script:
+#### Variables in tidydataset.txt:
+
+The summarized dataset tidydata.txt begins with the following variables:
+activity class: activity code (1-6)
+activity: activity description 
+subject: subject (participant) number
+
+The full source dataset includes many more variables than were used for this project (full set listed far below).  However, step 2 of the project instructions indicates that the successful R script:
 2.Extracts only the measurements on the mean and standard deviation for each measurement.
 
 The interpretation here was to include the subset of variables whose names contain the terms 'mean' or 'std': 
@@ -68,8 +75,11 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
 
+The final project instructions were to create (from the observation-level mean/std file) a summarized tidy
+data set with the average of each variable for each activity and 
+each subject.
 
-Variables in the full source dataset:
+####Per data source - variables in the full source dataset:
 
 The set of variables that were estimated from these signals are: 
 
