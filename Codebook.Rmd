@@ -56,7 +56,7 @@ activity class: activity (1-6)
 activity: activity description   
 subject: subject (participant) number  
 
-The full source dataset includes many more variables than were used for this project (full set listed down below).  Step 2 of the project instructions indicates that the successful R script:   
+The full source dataset includes many more variables than were used for this project (full set listed down below).Step 2 of the project instructions indicates that the successful R script:   
 2.Extracts only the measurements on the mean and standard deviation for each measurement.  The interpretation here was to include the subset of variables whose names contain the terms 'mean' or 'std': 
 
 mean(): Mean value   
