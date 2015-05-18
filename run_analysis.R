@@ -60,6 +60,6 @@ dataset<-merge(dataset,activity_labels, by.x="activity_class", by.y="activity_cl
  
 ## 5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
 dsn_agg<-aggregate(. ~ subject + activity_class + activity, dataset, mean)
-dsn_agg<-dsn_agg[order(dsn_agg$activity,dsn_agg$subject),]
+dsn_agg<-dsn_agg[order(dsn_agg$activity_class,dsn_agg$activity,dsn_agg$subject),]
 write.table(dsn_agg, file = "./GettingAndCleaningData_Project/tidydata.txt",row.name=FALSE)
 
